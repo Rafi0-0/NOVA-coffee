@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Complete your NOVA Coffee order."
+    >
+
+    <title>NOVA COFFEE | Checkout</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- Main CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- Checkout CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/checkout.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar checkout-navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+
+        <span>NOVA</span>
+
+        <small>COFFEE</small>
+
+    </a>
+
+
+    <div class="checkout-secure">
+
+        <i class="fa-solid fa-lock"></i>
+
+        Secure Checkout
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     CHECKOUT HERO
+========================================= -->
+
+<section class="checkout-hero">
+
+    <div class="checkout-hero-content">
+
+        <p class="section-label">
+            NOVA COFFEE
+        </p>
+
+        <h1>
+
+            COMPLETE YOUR
+
+            <span>
+                ORDER.
+            </span>
+
+        </h1>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CHECKOUT
+========================================= -->
+
+<main class="checkout-section">
+
+    <div class="checkout-container">
+
+
+        <!-- =====================================
+             CUSTOMER INFORMATION
+        ====================================== -->
+
+        <section class="checkout-form-section">
+
+
+            <div class="checkout-heading">
+
+                <span class="step-number">
+                    01
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        CUSTOMER INFORMATION
+                    </p>
+
+                    <h2>
+                        DELIVERY DETAILS
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <form
+                id="checkoutForm"
+                novalidate
+            >
+
+
+                <!-- NAME -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Your first name"
+                            required
+                        >
+
+                        <small class="error-message"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Your last name"
+                            required
+                        >
+
+                        <small class="error-message"></small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <div class="phone-input">
+
+                        <span>
+                            +966
+                        </span>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="5XXXXXXXX"
+                            maxlength="9"
+                            required
+                        >
+
+                    </div>
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+
+                <!-- ADDRESS -->
+
+                <div class="checkout-heading address-heading">
+
+                    <span class="step-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <p class="section-label">
+                            DELIVERY
+                        </p>
+
+                        <h2>
+                            YOUR ADDRESS
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="city">
+                        City
+                    </label>
+
+                    <select
+                        id="city"
+                        name="city"
+                        required
+                    >
+
+                        <option value="">
+                            Select your city
+                        </option>
+
+                        <option value="arar">
+                            Arar
+                        </option>
+
+                        <option value="riyadh">
+                            Riyadh
+                        </option>
+
+                        <option value="jeddah">
+                            Jeddah
+                        </option>
+
+                        <option value="dammam">
+                            Dammam
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="address">
+                        Street Address
+                    </label>
+
+                    <input
+                        type="text"
+                        id="address"
+                        name="address"
+                        placeholder="Street, building, apartment..."
+                        required
+                    >
+
+                    <small class="error-message"></small>
+
+                </div>
+
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="building">
+                            Building / Apartment
+                        </label>
+
+                        <input
+                            type="text"
+                            id="building"
+                            name="building"
+                            placeholder="Optional"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="postalCode">
+                            Postal Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="postalCode"
+                            name="postalCode"
+                            placeholder="12345"
+                            maxlength="5"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- NOTES -->
+
+                <div class="form-group">
+
+                    <label for="notes">
+                        Order Notes
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        name="notes"
+                        rows="4"
+                        placeholder="Anything we should know?"
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- PAYMENT -->
+
+                <div class="checkout-heading payment-heading">
+
+                    <span class="step-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <p class="section-label">
+                            PAYMENT
+                        </p>
+
+                        <h2>
+                            PAYMENT METHOD
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="payment-options">
+
+
+                    <label class="payment-option active">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="cash"
+                            checked
+                        >
+
+                        <span class="payment-radio"></span>
+
+                        <span class="payment-content">
+
+                            <strong>
+                                Cash on Delivery
+                            </strong>
+
+                            <small>
+                                Pay when your order arrives.
+                            </small>
+
+                        </span>
+
+                        <i class="fa-solid fa-money-bill-wave"></i>
+
+                    </label>
+
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="card"
+                        >
+
+                        <span class="payment-radio"></span>
+
+                        <span class="payment-content">
+
+                            <strong>
+                                Card Payment
+                            </strong>
+
+                            <small>
+                                Available when online
+                                payments are connected.
+                            </small>
+
+                        </span>
+
+                        <i class="fa-solid fa-credit-card"></i>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- TERMS -->
+
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required
+                    >
+
+                    <span class="custom-checkbox">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+
+                    <span>
+
+                        I agree to the order
+                        and delivery terms.
+
+                    </span>
+
+                </label>
+
+
+                <small
+                    class="terms-error"
+                    id="termsError"
+                ></small>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="place-order-btn"
+                    id="placeOrderBtn"
+                >
+
+                    <span>
+                        Place Order
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </form>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ORDER REVIEW
+        ====================================== -->
+
+        <aside class="checkout-summary">
+
+
+            <div class="summary-header">
+
+                <p class="section-label">
+                    YOUR ORDER
+                </p>
+
+                <h2>
+                    ORDER REVIEW
+                </h2>
+
+            </div>
+
+
+            <!-- Products -->
+
+            <div
+                id="checkoutItems"
+                class="checkout-items"
+            ></div>
+
+
+            <!-- Totals -->
+
+            <div class="checkout-total-box">
+
+
+                <div class="checkout-line">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="checkoutSubtotal">
+                        0 SAR
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-line">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <strong id="checkoutDelivery">
+                        0 SAR
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-final">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="checkoutTotal">
+                        0 SAR
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Secure -->
+
+            <div class="checkout-trust">
+
+                <div>
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <span>
+                        Secure Order
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <span>
+                        Fast Delivery
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-mug-hot"></i>
+
+                    <span>
+                        Freshly Prepared
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="cart.html"
+                class="edit-cart"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Edit Cart
+
+            </a>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================================
+     SUCCESS MODAL
+========================================= -->
+
+<div
+    class="success-overlay"
+    id="successOverlay"
+>
+
+    <div class="success-box">
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <p class="section-label">
+            NOVA COFFEE
+        </p>
+
+
+        <h2>
+            ORDER
+            <span>CONFIRMED.</span>
+        </h2>
+
+
+        <p>
+            Thank you for choosing NOVA.
+            Your order has been received
+            successfully.
+        </p>
+
+
+        <div class="order-number">
+
+            Order #
+
+            <strong id="orderNumber">
+                NOVA0000
+            </strong>
+
+        </div>
+
+
+        <a
+            href="index.html"
+            class="success-btn"
+        >
+
+            Back to Home
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 NOVA COFFEE.
+            ALL RIGHTS RESERVED.
+        </p>
+
+        <p>
+            SECURE CHECKOUT.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>

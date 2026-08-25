@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore the NOVA Coffee menu."
+    >
+
+    <title>NOVA COFFEE | Menu</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- Main CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- Menu CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/menu.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar menu-navbar" id="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+
+        <span>NOVA</span>
+
+        <small>COFFEE</small>
+
+    </a>
+
+
+    <nav class="nav-links" id="navLinks">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a
+            href="menu.html"
+            class="active"
+        >
+            Menu
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a href="index.html#experience">
+            Experience
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <a
+            href="cart.html"
+            class="cart-link"
+            aria-label="Shopping cart"
+        >
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span class="cart-count">
+                0
+            </span>
+
+        </a>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open menu"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     MENU HERO
+========================================= -->
+
+<section class="menu-hero">
+
+    <div class="menu-hero-overlay"></div>
+
+
+    <div class="menu-hero-content reveal">
+
+        <p class="section-label">
+            THE NOVA MENU
+        </p>
+
+
+        <h1>
+
+            FIND YOUR
+
+            <span>
+                FAVORITE.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            From carefully crafted espresso
+            to refreshing cold brews,
+            there is a NOVA waiting for you.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     MENU SECTION
+========================================= -->
+
+<main class="menu-section">
+
+
+    <!-- MENU TOP -->
+
+    <div class="menu-top reveal">
+
+        <div>
+
+            <p class="section-label">
+                OUR SELECTION
+            </p>
+
+            <h2>
+
+                CHOOSE YOUR
+
+                <span>
+                    MOMENT.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="menu-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search menu..."
+                autocomplete="off"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         FILTERS
+    ====================================== -->
+
+    <div
+        class="menu-filters reveal"
+        id="menuFilters"
+    >
+
+        <button
+            class="filter-btn active"
+            data-category="all"
+        >
+            All
+        </button>
+
+        <button
+            class="filter-btn"
+            data-category="espresso"
+        >
+            Espresso
+        </button>
+
+        <button
+            class="filter-btn"
+            data-category="cold"
+        >
+            Cold
+        </button>
+
+        <button
+            class="filter-btn"
+            data-category="tea"
+        >
+            Tea
+        </button>
+
+        <button
+            class="filter-btn"
+            data-category="pastry"
+        >
+            Pastry
+        </button>
+
+    </div>
+
+
+
+    <!-- =====================================
+         PRODUCTS
+    ====================================== -->
+
+    <section
+        class="products-grid"
+        id="productsGrid"
+    >
+
+
+        <!-- PRODUCT 1 -->
+
+        <article
+            class="menu-product reveal"
+            data-category="espresso"
+            data-name="Velvet Latte"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85"
+                    alt="Velvet Latte"
+                >
+
+
+                <span class="product-tag">
+                    BESTSELLER
+                </span>
+
+            </div>
+
+
+            <div class="product-details">
+
+                <div>
+
+                    <p class="product-category">
+                        ESPRESSO
+                    </p>
+
+                    <h3>
+                        Velvet Latte
+                    </h3>
+
+                    <p class="product-description">
+
+                        Smooth espresso,
+                        silky milk and
+                        a delicate finish.
+
+                    </p>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        20 SAR
+                    </strong>
+
+
+                    <button
+                        class="add-cart-btn"
+                        data-id="1"
+                        data-name="Velvet Latte"
+                        data-price="20"
+                        data-image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85"
+                    >
+
+                        <span>
+                            Add to Cart
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 2 -->
+
+        <article
+            class="menu-product reveal"
+            data-category="espresso"
+            data-name="Midnight Mocha"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=85"
+                    alt="Midnight Mocha"
+                >
+
+            </div>
+
+
+            <div class="product-details">
+
+                <div>
+
+                    <p class="product-category">
+                        CHOCOLATE
+                    </p>
+
+                    <h3>
+                        Midnight Mocha
+                    </h3>
+
+                    <p class="product-description">
+
+                        Rich espresso,
+                        dark chocolate and
+                        velvety steamed milk.
+
+                    </p>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        22 SAR
+                    </strong>
+
+
+                    <button
+                        class="add-cart-btn"
+                        data-id="2"
+                        data-name="Midnight Mocha"
+                        data-price="22"
+                        data-image="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=85"
+                    >
+
+                        <span>
+                            Add to Cart
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <article
+            class="menu-product reveal"
+            data-category="cold"
+            data-name="Dark Cold Brew"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=85"
+                    alt="Dark Cold Brew"
+                >
+
+                <span class="product-tag">
+                    COLD
+                </span>
+
+            </div>
+
+
+            <div class="product-details">
+
+                <div>
+
+                    <p class="product-category">
+                        COLD BREW
+                    </p>
+
+                    <h3>
+                        Dark Cold Brew
+                    </h3>
+
+                    <p class="product-description">
+
+                        Slow brewed for
+                        a smooth, bold
+                        and refreshing taste.
+
+                    </p>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        18 SAR
+                    </strong>
+
+
+                    <button
+                        class="add-cart-btn"
+                        data-id="3"
+                        data-name="Dark Cold Brew"
+                        data-price="18"
+                        data-image="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=85"
+                    >
+
+                        <span>
+                            Add to Cart
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 4 -->
+
+        <article
+            class="menu-product reveal"
+            data-category="espresso"
+            data-name="Classic Americano"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=1000&q=85"
+                    alt="Classic Americano"
+                >
+
+            </div>
+
+
+            <div class="product-details">
+
+                <div>
+
+                    <p class="product-category">
+                        ESPRESSO
+                    </p>
+
+                    <h3>
+                        Classic Americano
+                    </h3>
+
+                    <p class="product-description">
+
+                        Double espresso
+                        balanced with
+                        hot filtered water.
+
+                    </p>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        16 SAR
+                    </strong>
+
+
+                    <button
+                        class="add-cart-btn"
+                        data-id="4"
+                        data-name="Classic Americano"
+                        data-price="16"
+                        data-image="https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=1000&q=85"
+                    >
+
+                        <span>
+                            Add to Cart
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 5 -->
+
+        <article
+            class="menu-product reveal"
+            data-category="cold"
+            data-name="Vanilla Iced Latte"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1000&q=85"
+                    alt="Vanilla Iced Latte"
+                >
+
+            </div>
+
+
+            <div class="product-details">
+
+                <div>
+
+                    <p class="product-category">
+                        ICED COFFEE
+                    </p>
+
+                    <h3>
+                        Vanilla Iced Latte
+                    </h3>
+
+                    <p class="product-description">
+
+                        Chilled espresso,
+                        creamy milk and
+                        vanilla sweetness.
+
+                    </p>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        21 SAR
+                    </strong>
+
+
+                    <button
+                        class="add-cart-btn"
+                        data-id="5"
+                        data-name="Vanilla Iced Latte"
+                        data-price="21"
+                        data-image="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1000&q=85"
+                    >
+
+                        <span>
+                            Add to Cart
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 6 -->
+
+        <article
+            class="menu-product reveal"
+            data-category="tea"
+            data-name="Matcha Cloud"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=1000&q=85"
+                    alt="Matcha Cloud"
+                >
+
+                <span class="product-tag">
+                    NEW
+                </span>
+
+            </div>
+
+
+            <div class="product-details">
+
+                <div>
+
+                    <p class="product-category">
+                        TEA
+                    </p>
+
+                    <h3>
+                        Matcha Cloud
+                    </h3>
+
+                    <p class="product-description">
+
+                        Premium matcha,
+                        creamy milk and
+                        a soft finish.
+
+                    </p>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        23 SAR
+                    </strong>
+
+
+                    <button
+                        class="add-cart-btn"
+                        data-id="6"
+                        data-name="Matcha Cloud"
+                        data-price="23"
+                        data-image="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=1000&q=85"
+                    >
+
+                        <span>
+                            Add to Cart
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 7 -->
+
+        <article
+            class="menu-product reveal"
+            data-category="pastry"
+            data-name="Butter Croissant"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85"
+                    alt="Butter Croissant"
+                >
+
+            </div>
+
+
+            <div class="product-details">
+
+                <div>
+
+                    <p class="product-category">
+                        PASTRY
+                    </p>
+
+                    <h3>
+                        Butter Croissant
+                    </h3>
+
+                    <p class="product-description">
+
+                        Golden, flaky and
+                        baked fresh every
+                        morning.
+
+                    </p>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        14 SAR
+                    </strong>
+
+
+                    <button
+                        class="add-cart-btn"
+                        data-id="7"
+                        data-name="Butter Croissant"
+                        data-price="14"
+                        data-image="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85"
+                    >
+
+                        <span>
+                            Add to Cart
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 8 -->
+
+        <article
+            class="menu-product reveal"
+            data-category="pastry"
+            data-name="Chocolate Croissant"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1000&q=85"
+                    alt="Chocolate Croissant"
+                >
+
+            </div>
+
+
+            <div class="product-details">
+
+                <div>
+
+                    <p class="product-category">
+                        PASTRY
+                    </p>
+
+                    <h3>
+                        Chocolate Croissant
+                    </h3>
+
+                    <p class="product-description">
+
+                        Crisp layers filled
+                        with rich dark
+                        chocolate.
+
+                    </p>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        16 SAR
+                    </strong>
+
+
+                    <button
+                        class="add-cart-btn"
+                        data-id="8"
+                        data-name="Chocolate Croissant"
+                        data-price="16"
+                        data-image="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1000&q=85"
+                    >
+
+                        <span>
+                            Add to Cart
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- NO RESULTS -->
+
+    <div
+        class="no-results"
+        id="noResults"
+    >
+
+        <i class="fa-solid fa-mug-hot"></i>
+
+        <h3>
+            Nothing found.
+        </h3>
+
+        <p>
+            Try another search or category.
+        </p>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================================
+     TOAST
+========================================= -->
+
+<div
+    class="cart-toast"
+    id="cartToast"
+>
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-check"></i>
+
+    </div>
+
+
+    <div>
+
+        <strong>
+            Added to Cart
+        </strong>
+
+        <span id="toastProduct">
+            Product
+        </span>
+
+    </div>
+
+
+    <a href="cart.html">
+        View Cart
+    </a>
+
+</div>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer id="contact">
+
+    <div class="footer-top">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <span>NOVA</span>
+
+                <small>COFFEE</small>
+
+            </a>
+
+
+            <p>
+                Coffee reimagined for the
+                moments that matter.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#experience">
+                Experience
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Visit
+            </h4>
+
+            <p>
+                Arar, Saudi Arabia
+            </p>
+
+            <p>
+                Open Daily
+            </p>
+
+            <p>
+                7:00 AM — 12:00 AM
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Follow
+            </h4>
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 NOVA COFFEE.
+            ALL RIGHTS RESERVED.
+        </p>
+
+        <p>
+            CRAFTED FOR GREAT MOMENTS.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script src="js/script.js"></script>
+
+<script src="js/menu.js"></script>
+
+
+</body>
+
+</html>
