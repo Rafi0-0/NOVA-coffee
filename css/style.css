@@ -1142,3 +1142,62 @@ footer {
     }
 
 }
+
+/* =========================
+   FINAL MOBILE FIX
+========================= */
+
+@media (max-width: 750px) {
+
+    .hero {
+        min-height: 100svh;
+        padding: 130px 20px 80px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.5rem, 16vw, 6rem);
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .hero-buttons .btn,
+    .hero-buttons .text-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-padding {
+        padding: 80px 20px;
+    }
+
+    .featured-image {
+        height: 350px;
+    }
+
+    .featured-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .experience-image {
+        min-height: 350px;
+    }
+
+    .experience-content {
+        padding: 70px 20px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+}
